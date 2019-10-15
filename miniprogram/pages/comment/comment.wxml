@@ -1,0 +1,34 @@
+<!--pages/comment/comment.wxml-->
+
+<view class='movieCt' style='background: url({{movieDetal.images.large}}) no-repeat top/cover'></view>
+<view class='movieMask' ></view>
+<view class='movieInfo'>
+<image class='movieIamg' src='{{movieDetal.images.small}}'></image>
+  <view class='info'>
+  <view class='movieTitle'>{{movieDetal.title}}</view>
+    <view>评分: <text class='rating'> {{movieDetal.rating.average}} </text></view>
+    <view>主演：<text wx:for='{{movieDetal.casts}}' wx:key='{{index}}'> {{item.name}}  </text> </view> 
+    <view>{{movieDetal.genres}}</view>
+    <view>{{movieDetal.durations}}</view>
+  
+  </view>
+   
+</view>
+<view class='summary'>{{movieDetal.summary}}</view>
+
+<van-cell-group>
+  <van-field
+    value="{{ comment }}"
+    placeholder="写一些评价吧"
+    border="{{ false }}"
+    bind:change="onCommentChange"
+  />
+</van-cell-group>
+
+<van-rate value="{{ score }}" bind:change="onScoreChange" />
+<van-button bindtap='uploadImag' type="warning" size='small'>上传照片</van-button>
+<van-button bindtap='submit' type="danger" size='small'>提交</van-button>
+<view>
+<image class='imag' wx:for='{{imagsList}}' wx:key='{{index}}' src='{{item}}'></image>
+
+</view>

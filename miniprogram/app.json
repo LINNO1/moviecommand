@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mypro/mypro",
+    "pages/comment/comment"
+ 
+  ],
+  "window": {
+    "backgroundColor": "#7FFFAA",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFEFD5",
+    "navigationBarTitleText": "豆瓣电影评分",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#BDB76B",
+    "backgroundColor": "#FFEFD5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "资讯",
+        "iconPath": "images/dy.png",
+        "selectedIconPath": "images/dy1.png"
+        
+      },
+      {
+        "pagePath": "pages/mypro/mypro",
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode1.png"
+      }
+    ]
+  }
+}

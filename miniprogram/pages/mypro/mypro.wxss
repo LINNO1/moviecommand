@@ -1,0 +1,34 @@
+/* pages/mypro/mypro.wxss */
+.imgct {
+  width: 100%;
+  height: 400rpx;
+}
+.image {
+  width: 200rpx;
+  height: 200rpx;
+  border: 30rpx solid #fff;
+  position: absolute;
+  top: 300rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400rpx;
+  opacity: .4;
+  border-bottom: 20rpx solid #eee;
+}
+.name {
+  font-size: 40rpx;
+  position: absolute;
+  top: 550rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.getinfo {
+    margin-top: 300rpx;
+  
+}

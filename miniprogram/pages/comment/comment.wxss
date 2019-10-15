@@ -1,0 +1,52 @@
+/* pages/comment/comment.wxss */
+
+
+.movieCt {
+  width: 100%;
+  height: 500rpx;
+  filter:blur(40rpx);
+  opacity: .4;
+}
+.movieMask {
+  width: 100%;
+  height: 500rpx;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: -1;
+  background-color: #333;
+}
+.movieIamg {
+  width: 200rpx;
+  height: 350rpx;
+}
+.movieInfo {
+  display: flex;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+  padding: 30rpx;
+}
+.info {
+  flex: 1;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: white;
+}
+.movieTitle {
+  font-size: 35rpx;
+  color: darkorange;
+  font-weight: bold;
+}
+.rating {
+   color: darkorange;
+}
+.summary {
+  font-size: 30rpx;
+}
+.imag {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 10rpx;
+}
